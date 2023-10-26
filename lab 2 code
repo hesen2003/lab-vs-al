@@ -1,0 +1,14 @@
+
+import random
+n=int(input('nece eded olacaq?---'))
+a=[0]*n
+b=[]
+from random import randint
+for i in range(n):
+    a[i]=randint(5,54)
+print(a)
+for i in a:
+    if i%5==0:
+        b.append(i)
+print(b)
+print('ededi orta',sum(b)/len(b))
